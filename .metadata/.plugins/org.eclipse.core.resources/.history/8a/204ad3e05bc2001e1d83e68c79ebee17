@@ -1,0 +1,5 @@
+package com.aischool.mapper;
+
+public interface BoardMapper {
+	
+	public  list();

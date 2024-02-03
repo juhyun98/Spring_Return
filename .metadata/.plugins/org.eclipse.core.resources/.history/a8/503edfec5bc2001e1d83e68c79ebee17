@@ -1,0 +1,9 @@
+package com.aischool.mapper;
+
+import java.util.ArrayList;
+
+import com.aischool.entity.Board;
+
+public interface BoardMapper {
+	
+	public ArrayList<Board> list();

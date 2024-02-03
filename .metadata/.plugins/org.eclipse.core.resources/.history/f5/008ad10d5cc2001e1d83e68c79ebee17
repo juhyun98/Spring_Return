@@ -1,0 +1,13 @@
+package com.aischool.mapper;
+
+import java.util.ArrayList;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.aischool.entity.Board;
+
+@Mapper
+public interface BoardMapper {
+	
+	public ArrayList<Board> list();
+}

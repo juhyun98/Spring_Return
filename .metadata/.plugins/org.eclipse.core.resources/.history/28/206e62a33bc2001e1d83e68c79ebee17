@@ -1,0 +1,6 @@
+-- 게시판 테이블 생성
+CREATE TABLE BOARD(
+	IDX 
+
+
+)

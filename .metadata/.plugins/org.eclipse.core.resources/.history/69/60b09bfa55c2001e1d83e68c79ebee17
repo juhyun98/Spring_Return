@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>게시판</h2>
+  <div class="panel panel-default">
+    <div class="panel-heading">게시판</div>
+    <div class="panel-body">
+		<table class="table table-hover table-bordered">
+			<tr>
+				<td>번호</td>
+				<td>제목</td>
+				<td>작성자</td>
+				<td>작성일</td>
+				<td>조회수</td>
+			</tr>
+			
+			<c:forEach items="${list}" var="vo">
+				그러면 리스트는 덩어리죠 이거는 배열이죠 그러면 차곡차곡 1번 2번 3번 게시물 꺼내야 겠죠 그거를 꺼내서
+				valuable vo에 담겠다 vo에 담아서 아넹 있는거 출력하고 또 꺼내서 넣고 다음꺼 넣고'
+				꺼내시면 디겠네 티알 
+				<tr>
+					<td></td>
+				</tr>
+			</c:forEach>
+			
+		</table>
+	</div>
+    <div class="panel-footer">스프링게시판 - 박병관</div>
+  </div>
+</div>
+
+</body>
+</html>

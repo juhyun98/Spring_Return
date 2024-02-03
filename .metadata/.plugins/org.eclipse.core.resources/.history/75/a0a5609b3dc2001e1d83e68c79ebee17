@@ -1,0 +1,16 @@
+-- 게시판 테이블 생성
+CREATE TABLE BOARD(
+	IDX INT NOT NULL AUTO_INCREMENT, -- 게시글 번호 -- 
+	TITLE VARCHAR(100) NOT NULL, -- 게시글 제목--
+	CONTENT VARCHAR(2000) NOT NULL, -- 게시글 내용 --
+	WRITER VARCHAR(30) NOT NULL, -- 작성자 --
+	INDATE DATETIME DEFAULT NOW(), -- 게시글 작성 시간 --
+	COUNT INT DEFAULT 0, -- 조회수 --
+	IMGPATH VARCHAR(500), -- 이미지 --
+	PRIMARY KEY(IDX) -- 기본키 설정 --
+);
+
+INSERT INTO BOARD(TITLE, CONTENT, WRITER)
+VALUES('어제 한국 VS 호주 경기 본 사람?', '손흥민 너무 멋있었음', '클린스만');
+
+SELECT * FROM BOARD;
